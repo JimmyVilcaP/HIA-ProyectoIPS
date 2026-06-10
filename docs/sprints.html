@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIA - Sprints</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">🩺 HIA Project</div>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="architecture.html">Arquitectura</a></li>
+            <li><a href="scrum-devops.html">Scrum & DevOps</a></li>
+            <li><a href="sprints.html">Sprints</a></li>
+            <li><a href="evidence.html">Evidencias</a></li>
+            <li><a href="team.html">Equipo</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Cronograma Real del Proyecto</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sprint</th>
+                            <th>Objetivo</th>
+                            <th>Actividades Realizadas / Planificadas</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sprint 0</strong></td>
+                            <td>Planificación inicial del proyecto.</td>
+                            <td>Selección del proyecto Open Source HIA, Análisis de arquitectura, Creación del repositorio, Configuración de GitHub Projects, Elaboración del cronograma y Definición de roles.</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 1</strong></td>
+                            <td>Implementar la infraestructura DevOps inicial.</td>
+                            <td>Configuración de GitHub Actions, Creación de ramas main y develop, Integración de pruebas automatizadas, Organización del backlog y Configuración de Jira.</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 2</strong></td>
+                            <td>Publicar y validar el sistema.</td>
+                            <td>Despliegue en Streamlit Cloud, Publicación de GitHub Pages, Validación de integración con Supabase, Validación de integración con Groq y Evidencias funcionales.</td>
+                            <td style="color: var(--warning-color); font-weight: bold;">En desarrollo / Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 3</strong></td>
+                            <td>Implementar mejoras funcionales y optimización.</td>
+                            <td>Mejoras de experiencia de usuario, Mejoras en interacción con IA, Optimización visual y Pruebas complementarias.</td>
+                            <td style="color: var(--text-muted);">Pendiente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprint 4</strong></td>
+                            <td>Documentación y cierre del proyecto.</td>
+                            <td>Elaboración del informe IEEE, Consolidación de evidencias, Documentación técnica y Presentación final.</td>
+                            <td style="color: var(--text-muted);">Pendiente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 class="section-title">Product Backlog Real (Historias de Usuario)</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Historia de Usuario</th>
+                            <th>Sprint</th>
+                            <th>Estado Actual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HU-01</strong></td>
+                            <td>Como equipo de desarrollo, queremos implementar GitHub Actions, para automatizar la validación del proyecto.</td>
+                            <td>Sprint 1</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-02</strong></td>
+                            <td>Como equipo de desarrollo, queremos desplegar el sistema HIA, para disponer de una versión accesible desde internet.</td>
+                            <td>Sprint 1</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-03</strong></td>
+                            <td>Como Scrum Master, quiero organizar el Product Backlog, para planificar correctamente las actividades del proyecto.</td>
+                            <td>Sprint 1</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Completado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-04</strong></td>
+                            <td>Como equipo de desarrollo, queremos implementar pruebas automatizadas, para validar el correcto funcionamiento del sistema.</td>
+                            <td>Sprint 1</td>
+                            <td style="color: var(--warning-color); font-weight: bold;">Completado / En progreso (Pytest)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-05</strong></td>
+                            <td>Como usuario, quiero recibir sugerencias de preguntas posteriores al análisis, para continuar interactuando con el sistema de forma más intuitiva.</td>
+                            <td>Sprint 2</td>
+                            <td style="color: var(--text-muted);">Pendiente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-06</strong></td>
+                            <td>Como usuario, quiero visualizar resultados de manera más clara, para interpretar fácilmente la información médica obtenida.</td>
+                            <td>Sprint 2</td>
+                            <td style="color: var(--text-muted);">Pendiente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-07</strong></td>
+                            <td>Como integrante del proyecto, quiero documentar la arquitectura y despliegue, para elaborar el informe técnico y académico.</td>
+                            <td>Sprint 2</td>
+                            <td style="color: var(--warning-color); font-weight: bold;">En progreso</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HU-08</strong></td>
+                            <td>Como integrante del proyecto, quiero recopilar evidencias de las actividades realizadas, para sustentar los entregables del curso.</td>
+                            <td>Sprint 2</td>
+                            <td style="color: var(--warning-color); font-weight: bold;">En progreso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HIA Project - Universidad Nacional de San Agustín.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

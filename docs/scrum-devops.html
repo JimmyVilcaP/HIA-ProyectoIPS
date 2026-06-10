@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIA - Scrum & DevOps</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">🩺 HIA Project</div>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="architecture.html">Arquitectura</a></li>
+            <li><a href="scrum-devops.html">Scrum & DevOps</a></li>
+            <li><a href="sprints.html">Sprints</a></li>
+            <li><a href="evidence.html">Evidencias</a></li>
+            <li><a href="team.html">Equipo</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header style="margin-bottom: 2.5rem;">
+            <h1 class="section-title">Metodología Scrum y DevOps</h1>
+            <p style="color: var(--text-muted);">Declaración explícita de herramientas de gestión ágil y automatizaciones implementadas en el ciclo de vida de HIA.</p>
+        </header>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3 style="color: var(--accent-color);">Herramientas Scrum utilizadas</h3>
+                <ul style="margin-left: 1.25rem; margin-top: 0.5rem; line-height: 1.8;">
+                    <li>Jira (Gobernanza del Sprint Backlog)</li>
+                    <li>GitHub Projects (Tablero Kanban de Evidencias)</li>
+                    <li>GitHub Issues (Trazabilidad de requerimientos técnicos)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 style="color: var(--accent-color);">Herramientas DevOps utilizadas</h3>
+                <ul style="margin-left: 1.25rem; margin-top: 0.5rem; line-height: 1.8;">
+                    <li>GitHub Actions (Servicio de Integración Continua)</li>
+                    <li>GitHub Pages (Alojamiento estático de documentación)</li>
+                    <li>Streamlit Cloud (Entorno de despliegue productivo de la app)</li>
+                    <li>GitHub Repository (Gestor de código fuente centralizado)</li>
+                    <li>Git Branching Strategy (Implementación de ramas alternativas: main/develop)</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="card" style="margin-bottom: 2rem;">
+            <h3>Flujo de Integración Continua (CI)</h3>
+            <p style="margin-top: 0.5rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                GitHub Actions ejecuta automáticamente la instalación de dependencias, validación del proyecto y pruebas automatizadas definidas por el equipo. Cada actualización enviada al repositorio es validada mediante GitHub Actions antes de ser desplegada en Streamlit Cloud, permitiendo aplicar prácticas de Integración Continua (CI) durante el desarrollo.
+            </p>
+            <div class="placeholder-img">
+                [Ubicación del Esquema CI/CD: docs/assets/diagrams/cicd_pipeline.png]
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HIA Project - Universidad Nacional de San Agustín.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

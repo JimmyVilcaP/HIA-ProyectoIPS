@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIA - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">🩺 HIA Project</div>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="architecture.html">Arquitectura</a></li>
+            <li><a href="scrum-devops.html">Scrum & DevOps</a></li>
+            <li><a href="sprints.html">Sprints</a></li>
+            <li><a href="evidence.html">Evidencias</a></li>
+            <li><a href="team.html">Equipo</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Health Insights Agent (HIA)</h1>
+        <p>Aplicación basada en Streamlit que permite analizar reportes médicos en PDF utilizando Inteligencia Artificial.</p>
+        <div class="cta-group">
+            <a href="https://github.com" target="_blank" class="btn btn-primary">📦 Repositorio GitHub</a>
+            <a href="https://streamlit.io" target="_blank" class="btn btn-secondary">🚀 Despliegue Streamlit Cloud</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Presentación de Hito 2</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                Este sitio sirve como repositorio centralizado de documentación y evidencias de ingeniería para HIA. Actualmente el proyecto ha completado de forma satisfactoria los Sprints 0 y 1, encontrándose en fase de desarrollo y validación final para el cierre del Sprint 2. El sistema base se encuentra funcional de manera local y desplegado en entornos en la nube con su suite de integración automatizada activa.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Ecosistema Tecnológico Implementado</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="card-tech-title">Frontend / Interfaz</h3>
+                    <p>Python y Streamlit (Auth Pages, Sidebar, Analysis Form, Chat Interface).</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-tech-title">Procesamiento e IA</h3>
+                    <p>Groq API, LangChain, FAISS, HuggingFace Embeddings y PDF Extractor.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-tech-title">Datos y Cloud</h3>
+                    <p>Supabase (PostgreSQL) para la persistencia relacional de datos y Streamlit Cloud para distribución.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HIA Project - Universidad Nacional de San Agustín. Evidencia Académica.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

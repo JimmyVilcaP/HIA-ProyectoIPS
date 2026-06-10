@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIA - Arquitectura</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">🩺 HIA Project</div>
+        <div class="menu-toggle"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="architecture.html">Arquitectura</a></li>
+            <li><a href="scrum-devops.html">Scrum & DevOps</a></li>
+            <li><a href="sprints.html">Sprints</a></li>
+            <li><a href="evidence.html">Evidencias</a></li>
+            <li><a href="team.html">Equipo</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1 class="section-title">Arquitectura del Proyecto</h1>
+            <p style="color: var(--text-muted);">Diseñada para ofrecer una arquitectura modular que facilite el mantenimiento, la escalabilidad y la integración con servicios de inteligencia artificial.</p>
+        </header>
+
+        <section class="diagram-container">
+            <h3>Diagrama Conceptual del Sistema</h3>
+            <div style="margin-top: 1.5rem;" class="placeholder-img">
+                [Ubicación del Diagrama: docs/assets/diagrams/architecture_map.png]
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Estructura por Capas Reales</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Capa de Presentación</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Desarrollada sobre Streamlit, encargada de renderizar Auth Pages, Sidebar de control, Analysis Form y la Chat Interface.</p>
+                </div>
+                <div class="card">
+                    <h3>Capa de Lógica de Negocio</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Orquestada mediante LangChain, compone el Analysis Agent, Chat Agent, Model Manager, PDF Extractor y validadores de estructura.</p>
+                </div>
+                <div class="card">
+                    <h3>Capa de Datos</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Utiliza Supabase (PostgreSQL) para Chat Sessions y Chat Messages junto a almacenamiento vectorial local en FAISS con HuggingFace Embeddings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" style="margin-top: 1.5rem;">
+            <h3>Flujo de Integración y Datos</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+                El sistema procesa los archivos PDF médicos, extrayendo el texto plano y segmentándolo para generar vectores relacionales mediante HuggingFace Embeddings que se alojan temporalmente en FAISS. Las consultas conversacionales se resuelven llamando a la API de Groq. Las sesiones de usuario, análisis generados y mensajes del chat se almacenan en Supabase para permitir la persistencia y recuperación de información entre sesiones.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HIA Project - Universidad Nacional de San Agustín.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
