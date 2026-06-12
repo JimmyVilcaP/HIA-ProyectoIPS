@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="nav-logo">🩺 HIA Project</div>
         <div class="menu-toggle"><span></span><span></span><span></span></div>
@@ -16,90 +15,105 @@
             <li><a href="architecture.html">Arquitectura</a></li>
             <li><a href="scrum-devops.html">Scrum & DevOps</a></li>
             <li><a href="sprints.html">Sprints</a></li>
-            <li><a href="evidence.html">Evidencias</a></li>
+            <li><a href="evidence.html" class="active">Evidencias</a></li>
             <li><a href="team.html">Equipo</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <header style="margin-bottom: 2rem;">
+        <header class="section-header">
             <h1 class="section-title">Evidencias del Proyecto</h1>
-            <p style="color: var(--text-muted);">Validación real de componentes técnicos, plataformas e infraestructura desplegada.</p>
+            <p class="section-subtitle">Validación real de componentes técnicos, plataformas e infraestructura desplegada.</p>
         </header>
 
         <div class="grid-2">
             <div class="card">
                 <h3>Integración Continua (GitHub Actions)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="./assets/images/evidencia_github_actions.png" alt="Evidencia de GitHub Actions" style="max-width: 100%; height: auto;">
+                <div class="evidence-img-container">
+                    <img src="./assets/images/evidencia_github_actions.png" alt="Evidencia de GitHub Actions" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Ejecución exitosa de los flujos de CI/CD en el repositorio.</p>
             </div>
 
             <div class="card">
                 <h3>Persistencia en BD (Supabase)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_supabase.png" alt="Evidencia de Supabase" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_supabase.png" alt="Evidencia de Supabase" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Tablas y registros almacenados correctamente en la base de datos.</p>
             </div>
 
             <div class="card">
                 <h3>Interfaz de Autenticación (Login)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_login.png" alt="Evidencia de Login" style="width:100%; height:auto; display:block; margin:0 auto;" />         
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_login.png" alt="Evidencia de Login" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Pantalla de acceso seguro para los usuarios del sistema.</p>
             </div>
 
             <div class="card">
                 <h3>Procesamiento Clínico (PDF Analysis)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_pdf_analysis.png" alt="Evidencia de PDF Analysis" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_pdf_analysis.png" alt="Evidencia de PDF Analysis" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Extracción y análisis de datos desde documentos médicos.</p>
             </div>
 
             <div class="card">
                 <h3>Interacción y Respuestas (Chat IA)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_chat_ia.png" alt="Evidencia de Chat IA" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_chat_ia.png" alt="Evidencia de Chat IA" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Interfaz conversacional funcionando con los modelos de IA.</p>
             </div>
 
             <div class="card">
                 <h3>Despliegue de Servidores (Streamlit Cloud)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_streamlit_cloud.png" alt="Evidencia de Streamlit Cloud" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_streamlit_cloud.png" alt="Evidencia de Streamlit Cloud" class="zoomable-image">
                 </div>
-                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Aplicación HIA desplegada exitosamente en Streamlit Cloud y accesible mediante una URL pública.</p>
+                <p class="evidence-desc">Aplicación HIA desplegada exitosamente y accesible mediante URL pública.</p>
             </div>
 
             <div class="card">
                 <h3>Planificación Ágil (GitHub Projects)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_github_projects.png" alt="Evidencia de GitHub Projects" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_github_projects.png" alt="Evidencia de GitHub Projects" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Tablero Kanban para la organización general del proyecto.</p>
             </div>
 
             <div class="card">
                 <h3>Trazabilidad de Tareas (GitHub Issues)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_github_issues.png" alt="Evidencia de GitHub Issues" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_github_issues.png" alt="Evidencia de GitHub Issues" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Registro detallado de bugs, features y tareas asignadas.</p>
             </div>
 
             <div class="card">
                 <h3>Gobernanza del Backlog (Jira Board)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_jira_board.png" alt="Evidencia de Jira Board" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_jira_board.png" alt="Evidencia de Jira Board" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Gestión de sprints y control de historias de usuario.</p>
             </div>
 
             <div class="card">
                 <h3>Documentación de Cátedra (GitHub Pages)</h3>
-                <div class="placeholder-img" style="margin: 1rem 0;">
-                    <img src="assets/images/evidencia_github_pages.png" alt="Evidencia de GitHub Pages" style="width:100%; height:auto; display:block; margin:0 auto;" />
+                <div class="evidence-img-container">
+                    <img src="assets/images/evidencia_github_pages.png" alt="Evidencia de GitHub Pages" class="zoomable-image">
                 </div>
+                <p class="evidence-desc">Sitio estático generado para documentar la arquitectura y avances.</p>
             </div>
         </div>
     </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="modalCaption"></div>
+    </div>
 
     <footer>
         <p>&copy; 2026 HIA Project - Universidad Nacional de San Agustín.</p>
