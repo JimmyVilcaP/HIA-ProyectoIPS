@@ -51,10 +51,11 @@
         <section class="card" style="margin-bottom: 2rem;">
             <h3>Flujo de Integración Continua (CI)</h3>
             <p style="margin-top: 0.5rem; color: var(--text-muted); margin-bottom: 1.5rem;">
-                GitHub Actions ejecuta automáticamente la instalación de dependencias, validación del proyecto y pruebas automatizadas definidas por el equipo. Cada actualización enviada al repositorio es validada mediante GitHub Actions antes de ser desplegada en Streamlit Cloud, permitiendo aplicar prácticas de Integración Continua (CI) durante el desarrollo.
+                El proyecto HIA implementa un proceso de Integración Continua (CI) mediante GitHub Actions. Cada actualización enviada a las ramas principales del repositorio activa automáticamente una pipeline encargada de instalar dependencias, validar la sintaxis del código fuente y ejecutar pruebas automatizadas desarrolladas con Pytest.
+                Este proceso permite detectar errores de manera temprana, garantizar la estabilidad del sistema y mantener una base de código confiable antes de su despliegue en Streamlit Cloud, siguiendo buenas prácticas DevOps aplicadas al desarrollo de software.
             </p>
             <div class="placeholder-img">
-                [Ubicación del Esquema CI/CD: docs/assets/diagrams/cicd_pipeline.png]
+                <img src="assets/diagrams/cicd_pipeline.png" alt="Esquema CI/CD" style="width:100%; height:auto; display:block; margin:0 auto;" />
             </div>
         </section>
     </main>
